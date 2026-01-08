@@ -1,0 +1,12 @@
+{
+    "name": "smart-campus-app-local",
+    "version": "1.0.0",
+    "description": "Root script to run all microservices locally",
+    "scripts": {
+        "install-all": "npm install && cd frontend && npm install && cd ../notice-service && npm install && cd ../complaint-service && npm install && cd ../booking-service && npm install && cd ../attendance-service && npm install",
+        "dev": "concurrently \"cd frontend && npm run dev\" \"cd notice-service && node server.js\" \"cd complaint-service && node server.js\" \"cd booking-service && node server.js\" \"cd attendance-service && node server.js\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    }
+}

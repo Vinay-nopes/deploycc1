@@ -1,0 +1,52 @@
+SMART CAMPUS SERVICES APP
+=========================
+
+APP OVERVIEW
+------------
+This is a modern, single-page web application designed to manage everyday campus activities. It features a dark-themed, glassmorphism UI that is both aesthetic and user-friendly.
+
+LOGIN DETAILS
+-------------
+Username: vinay
+Password: vin18
+
+FEATURES
+--------
+
+1. NOTICE BOARD
+   - Purpose: Keep students and staff updated with the latest news.
+   - Functionality:
+     * Post new notices with a Title, Date, and Description.
+     * View all active notices in a list.
+     * Delete notices that are no longer relevant.
+
+2. COMPLAINTS PORTAL
+   - Purpose: Report campus issues easily.
+   - Functionality:
+     * File complaints by category (Maintenance, IT Support, Cafeteria, etc.).
+     * Describe the specific issue.
+     * Mark complaints as "Resolved" to remove them from the list.
+
+3. ROOM BOOKING
+   - Purpose:  Reserve campus facilities like Conference Rooms or Labs.
+   - Functionality:
+     * Book a specific room by entering the Room Name, Date, and Time.
+     * View a list of your upcoming bookings.
+     * Cancel bookings if plans change.
+
+4. ATTENDANCE TRACKER
+   - Purpose: Monitor academic attendance in real-time.
+   - Functionality:
+     * Input "Total Classes Held" and "Classes Attended".
+     * Validates attendance health: 
+       - Green (>75%): Excellent
+       - Yellow (60-75%): Warning
+       - Red (<60%): Danger
+     * Visual percentage circle updates automatically as you change the numbers.
+
+TECHNICAL INFRASTRUCTURE
+------------------------
+- Framework: React.js (Vite)
+- Language: JavaScript (ES6+)
+- Styling: Custom CSS with Variables (Dark Mode / Glass Effect)
+- State Management: React useState & useEffect (No external database required)

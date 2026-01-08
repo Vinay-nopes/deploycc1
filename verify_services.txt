@@ -1,0 +1,36 @@
+
+# Smart Campus Docker Management Commands
+
+Here are the commands to verify, stop, and manage your Docker containers.
+
+## 1. Check Running Containers
+To see which containers are currently running and their ports:
+docker ps
+
+## 2. Stop Services
+To stop all services and remove the containers:
+docker-compose down
+
+To stop a specific container (e.g., frontend):
+docker stop smart-campus-app-frontend-1
+
+## 3. Start Services
+To start the services (in detached mode, so they run in background):
+docker-compose up -d
+
+To start services and see logs in the terminal:
+docker-compose up
+
+## 4. Rebuild Services
+If you make code changes, rebuild the images:
+docker-compose up --build
+
+## 5. View Logs
+To view logs for all services:
+docker-compose logs -f
+
+To view logs for a specific service (e.g., notice-service):
+docker-compose logs -f notice-service
+
+## 6. Restart a Specific Service
+docker-compose restart notice-service
