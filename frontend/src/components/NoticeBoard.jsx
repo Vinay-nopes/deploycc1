@@ -55,7 +55,7 @@ const NoticeBoard = () => {
         <div className="feature-header">
           <h2 style={{ color: 'var(--danger)' }}>📢 Notice Board (Offline)</h2>
         </div>
-        <p>⚠️ Service is currently unavailable. Please check Docker container `notice-service`.</p>
+        <p>⚠️ Service is currently unavailable. Please check your network connection or try again later.</p>
       </div>
     );
   }

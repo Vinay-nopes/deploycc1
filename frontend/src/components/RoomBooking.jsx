@@ -41,7 +41,7 @@ const RoomBooking = () => {
     if (error) return (
         <div className="feature-container" style={{ border: '1px solid var(--danger)' }}>
             <h2 style={{ color: 'var(--danger)' }}>📅 Room Booking (Offline)</h2>
-            <p>Service unavailable. Check `booking-service`.</p>
+            <p>⚠️ Service is currently unavailable. Please check your network connection or try again later.</p>
         </div>
     );
 

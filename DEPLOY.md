@@ -73,3 +73,25 @@ This guide will help you deploy your Smart Campus App.
 1.  Open your Vercel URL.
 2.  Try logging in or using a feature.
 3.  If it works, your full stack app is live!
+
+## How to Redeploy
+
+If your deployment fails (e.g., due to the previous "Permission denied" error), you need to trigger a new build.
+
+### Option 1: Vercel Dashboard (Easiest)
+1.  Go to your **Vercel Dashboard** -> Click on your Project.
+2.  Go to the **Deployments** tab.
+3.  Find the failed deployment (top of the list).
+4.  Click the **three dots** (...) next to it.
+5.  Select **Redeploy**.
+6.  Click **Redeploy** again in the confirmation popup.
+
+### Option 2: Push a Change (Git)
+Making any new commit and pushing it to GitHub will automatically trigger Vercel to build again.
+- You can simply change a readme or add a comment to a file.
+- Example command:
+  ```bash
+  git commit --allow-empty -m "Trigger redeploy"
+  git push
+  ```
+
