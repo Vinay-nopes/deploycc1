@@ -4,7 +4,8 @@ const Complaints = () => {
     const [complaints, setComplaints] = useState([]);
     const [form, setForm] = useState({ category: 'Maintenance', desc: '' });
     const [error, setError] = useState(false);
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/complaints';
+    const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const API_URL = `${BASE_URL}/api/complaints`;
 
     useEffect(() => {
         fetchData();

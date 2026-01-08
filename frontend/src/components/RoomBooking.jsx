@@ -4,7 +4,8 @@ const RoomBooking = () => {
     const [bookings, setBookings] = useState([]);
     const [form, setForm] = useState({ room: '', date: '', time: '' });
     const [error, setError] = useState(false);
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/bookings';
+    const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const API_URL = `${BASE_URL}/api/bookings`;
 
     useEffect(() => { fetchBookings(); }, []);
 

@@ -4,7 +4,8 @@ const Attendance = () => {
     const [data, setData] = useState({ total: 40, attended: 32 });
     const [percentage, setPercentage] = useState(0);
     const [error, setError] = useState(false);
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/attendance';
+    const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const API_URL = `${BASE_URL}/api/attendance`;
 
     useEffect(() => {
         const load = async () => {
